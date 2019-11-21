@@ -1,0 +1,283 @@
+@primary-color: #0c87ff;
+@danger-color: #fa5151;
+@success-color: #07C160;
+@common-height: 20px;
+
+html,
+body,
+#app,
+#app>div {
+  height: 100%;
+}
+
+body {
+  background: #f1f1f1;
+}
+
+.weui-cells__group_form {
+  .weui-cell {
+    padding: 12px 18px;
+  }
+}
+
+.weui-cells__group_form .weui-cells:before,
+.weui-cells__group_form .weui-cell:before {
+  left: 20px;
+  right: 20px;
+}
+
+.weui-cells {
+  font-size: 14px;
+  line-height: @common-height;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px !important;
+}
+
+.margin-top-0 {
+  margin-top: 0 !important;
+}
+
+.margin-top-10 {
+  margin-top: 10px !important;
+}
+
+.margin-left-10 {
+  margin-left: 10px !important;
+}
+
+.padding-top-bottom-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0;
+}
+
+.padding-top-10 {
+  padding-top: 10px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.photo-cont {
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #eee;
+
+  img {
+    width: 100%;
+  }
+}
+
+.weui-textarea {
+  height: 60px;
+  border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+
+
+.photo-direction {
+  font-size: 14px;
+  color: #888;
+}
+
+.we-hide {
+  display: none;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.we-form-btn {
+  margin: 30px auto;
+  width: 60%;
+}
+
+.weui-cells_form {
+  .weui-select {
+    padding: 0;
+    -webkit-appearance: menulist;
+    height: 25px;
+    background: none;
+  }
+}
+
+.weui-cells__group_form .weui-cells:before {
+  left: 0;
+  right: 0;
+  border-top: 1px solid rgba(0, 0, 0, .2);
+}
+
+.we-title {
+  height: 20px;
+  line-height: 20px;
+  border-left: 3px solid @primary-color;
+  padding-left: 8px;
+}
+
+@bar-width: 16px;
+
+.we-daterange-container {
+  input {
+    // border: 1px solid;
+  }
+
+  &:after {
+    content: '';
+    display: inline-block;
+    width: @bar-width;
+    height: 9px;
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    left: 50%;
+    margin-left: -@bar-width / 2;
+  }
+
+  .we-daterange-start {
+    display: inline-block;
+    width: 49%;
+
+    input {
+      text-align: left;
+    }
+  }
+
+  .we-daterange-end {
+    display: inline-block;
+    width: 49%;
+
+    input {
+      text-align: right;
+    }
+  }
+}
+
+.btn-area {
+  padding: 15px 30px;
+  overflow: hidden;
+
+  button {
+    width: 40%;
+    margin-top: 0 !important;
+
+  }
+}
+
+.weui-btn_default:not(.weui-btn_disabled) {
+  background-color: #fff;
+  color: rgba(0, 0, 0, .8);
+  border: 1px solid rgba(0, 0, 0, .08) !important;
+
+  &:active {
+    color: rgba(0, 0, 0, .8);
+  }
+}
+
+.weui-btn_primary:not(.weui-btn_disabled) {
+  background-color: @primary-color;
+
+  &:active {
+    background-color: @primary-color - #111;
+  }
+}
+
+button {
+  font-weight: normal !important;
+}
+
+.weui-cell_warn {
+  color: @danger-color  !important;
+}
+
+.weui-loadmore_line .weui-loadmore__tips {
+  background: none !important;
+}
+
+.we-no-data {
+  position: absolute;
+  top: 50%;
+  width: 80%;
+  left: 10%;
+}
+
+.weui-btn_normal {
+  background-color: #07C160;
+
+}
+
+.weui-btn_mini {
+  font-size: 13px;
+  // height: 20px;
+  line-height: 1.7;
+}
+
+.primary-color {
+  color: @primary-color;
+}
+
+.danger-color {
+  color: @danger-color;
+}
+
+.success-color {
+  color: @success-color;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.background-gray {
+  background: #f1f1f1;
+}
+
+// input[type="radio"] {
+//   float: left;
+// }
+
+.weui-cell .vue-treeselect__control {
+  background: none !important;
+  border: none;
+  padding-left: 0;
+  padding-bottom: 0;
+  height: @common-height;
+
+
+  .vue-treeselect__single-value,
+  .vue-treeselect__input-container {
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  .vue-treeselect__placeholder,
+  .vue-treeselect__single-value {
+    line-height: @common-height - 2;
+  }
+
+  .vue-treeselect__value-container,
+  .vue-treeselect__multi-value {
+    vertical-align: bottom;
+  }
+
+  .vue-treeselect__x {
+    display: none;
+  }
+}
